@@ -9,10 +9,11 @@ FYP-1 work on network intrusion detection with the GeNIS dataset. This repositor
 
 ## Running the notebook
 
-The notebook is designed for Google Colab or a local Jupyter environment. It downloads the GeNIS preprocessed archive from Zenodo and currently expects a substantial download. Install the dependencies in the setup cell, then run all cells from top to bottom. Saved notebook outputs have been cleared; rerunning generates fresh charts and metrics.
+The notebook is designed for Google Colab or a local Jupyter environment. It downloads the GeNIS preprocessed archive from Zenodo in resumable 8 MB HTTP byte ranges, retries interrupted ranges, and validates the ZIP before extraction. If a connection fails after the retry limit, rerun the download cell; it resumes from the saved `.part` file. Install the dependencies in the setup cell, then run all cells from top to bottom. Saved notebook outputs have been cleared; rerunning generates fresh charts and metrics.
 
 Do not commit downloaded dataset archives, extracted CSV files, generated charts, credentials, or environment-specific files. Dataset licensing and citation details are in the notebook and source dataset record.
 
 ## Current scope
 
 This repository tracks Module 1. Module 2 augmentation comparisons and later dashboard work are planned separately. Results are empirical; no augmentation benefit is assumed in advance.
+
