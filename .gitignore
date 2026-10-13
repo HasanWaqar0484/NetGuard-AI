@@ -1,0 +1,17 @@
+# Dataset archives and extracted data
+*.zip
+*.csv
+/genis_data/
+
+# Generated notebook artifacts
+chart*.png
+*.html
+
+# Python and Jupyter runtime artifacts
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+
