@@ -16,4 +16,3 @@ Do not commit downloaded dataset archives, extracted CSV files, generated charts
 ## Current scope
 
 This repository tracks Module 1. Module 2 augmentation comparisons and later dashboard work are planned separately. Results are empirical; no augmentation benefit is assumed in advance.
-
